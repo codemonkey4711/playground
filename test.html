@@ -26,13 +26,13 @@ function doIt(input) {
 	console.log("input: " + input);
 	console.log(last + " + " + displayNumber + " = " + (last + displayNumber));
 	if(result == input) {
-		document.getElementById("myForm").style.backgroundColor = "green";
+		document.getElementById("myTable").style.backgroundColor = "green";
 		last = displayNumber;
 		display.value = Number(Math.floor(Math.random() * 9) + 1);
 		console.log("correct, new hidden value: " + last);
 	} else {
 		console.log("invalid, set hidden value to 0");
-		document.getElementById("myForm").style.backgroundColor = "red";
+		document.getElementById("myTable").style.backgroundColor = "red";
 		init();
 	}
 	
@@ -47,7 +47,7 @@ function doIt(input) {
 <body id="bg" bgcolor="white" onload="init();">
 
 <FORM NAME="Calc" id="myForm">
-<TABLE BORDER=1>
+<TABLE BORDER=1 id="myTable">
 <TR>
 <TD>
 
