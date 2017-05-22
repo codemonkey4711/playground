@@ -11,6 +11,13 @@ function init() {
 	console.log("unsichtbar: " + last);
 }
 
+document.onkeyup  = function(event) {
+	var c = Number(event.key);
+	if(c >= 0 && c <= 9) {
+		doIt(c);
+	}
+};
+
 function doIt(input) {
 	input = Number(input);
 	var display = document.getElementById("myInput");
@@ -40,30 +47,30 @@ function doIt(input) {
 <body id="bg" bgcolor="white" onload="init();">
 
 <FORM NAME="Calc">
-<TABLE BORDER=4>
+<TABLE BORDER=1>
 <TR>
 <TD>
 
-<INPUT TYPE="text"  id="myInput"  NAME="Input" Size="16">
+<INPUT TYPE="text" id="myInput"  NAME="Input" Size="16" style="font-size: 30">
 <br>
 </TD>
 </TR>
 <TR>
 <TD>
-<INPUT TYPE="button" VALUE="  7  " OnClick="doIt('7');">
-<INPUT TYPE="button" VALUE="  8  " OnCLick="doIt('8');">
-<INPUT TYPE="button" VALUE="  9  " OnClick="doIt('9');">
+<INPUT TYPE="button" VALUE="  7  " OnClick="doIt('7');" style="font-size: 30">
+<INPUT TYPE="button" VALUE="  8  " OnCLick="doIt('8');" style="font-size: 30">
+<INPUT TYPE="button" VALUE="  9  " OnClick="doIt('9');" style="font-size: 30">
 <br>
-<INPUT TYPE="button" VALUE="  4  " OnClick="doIt('4');">
-<INPUT TYPE="button" VALUE="  5  " OnCLick="doIt('5');">
-<INPUT TYPE="button" VALUE="  6  " OnClick="doIt('6');">
+<INPUT TYPE="button" VALUE="  4  " OnClick="doIt('4');" style="font-size: 30">
+<INPUT TYPE="button" VALUE="  5  " OnCLick="doIt('5');" style="font-size: 30">
+<INPUT TYPE="button" VALUE="  6  " OnClick="doIt('6');" style="font-size: 30">
 <br>
-<INPUT TYPE="button" VALUE="  1  " OnClick="doIt('1');">
-<INPUT TYPE="button" VALUE="  2  " OnCLick="doIt('2');">
-<INPUT TYPE="button" VALUE="  3  " OnClick="doIt('3');">
+<INPUT TYPE="button" VALUE="  1  " OnClick="doIt('1');" style="font-size: 30">
+<INPUT TYPE="button" VALUE="  2  " OnCLick="doIt('2');" style="font-size: 30">
+<INPUT TYPE="button" VALUE="  3  " OnClick="doIt('3');" style="font-size: 30">
 <br>
 
-<INPUT TYPE="button" VALUE="  0  " OnClick="doIt('0');">
+<INPUT TYPE="button" VALUE="  0  " OnClick="doIt('0');" style="font-size: 30">
 <br>
 </TD>
 </TR>
