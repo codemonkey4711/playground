@@ -26,13 +26,13 @@ function doIt(input) {
 	console.log("input: " + input);
 	console.log(last + " + " + displayNumber + " = " + (last + displayNumber));
 	if(result == input) {
-		document.getElementById("bg").style.backgroundColor = "green";
+		display.style.backgroundColor = "green";
 		last = displayNumber;
 		display.value = Number(Math.floor(Math.random() * 9) + 1);
 		console.log("correct, new hidden value: " + last);
 	} else {
 		console.log("invalid, set hidden value to 0");
-		document.getElementById("bg").style.backgroundColor = "red";
+		display.style.backgroundColor = "red";
 		init();
 	}
 	
@@ -51,26 +51,26 @@ function doIt(input) {
 <TR>
 <TD>
 
-<INPUT TYPE="text" id="myInput"  NAME="Input" Size="9" style="font-size: 30">
+<INPUT TYPE="text" id="myInput"  NAME="Input" Size="9" style="font-size: 40; text-align: center; ">
 <br>
 </TD>
 </TR>
 <TR>
 <TD>
-<INPUT TYPE="button" VALUE="  7  " OnClick="doIt('7');" style="font-size: 30">
-<INPUT TYPE="button" VALUE="  8  " OnCLick="doIt('8');" style="font-size: 30">
-<INPUT TYPE="button" VALUE="  9  " OnClick="doIt('9');" style="font-size: 30">
+<INPUT TYPE="button" VALUE="  7  " OnClick="doIt('7');" style="font-size: 40">
+<INPUT TYPE="button" VALUE="  8  " OnCLick="doIt('8');" style="font-size: 40">
+<INPUT TYPE="button" VALUE="  9  " OnClick="doIt('9');" style="font-size: 40">
 <br>
-<INPUT TYPE="button" VALUE="  4  " OnClick="doIt('4');" style="font-size: 30">
-<INPUT TYPE="button" VALUE="  5  " OnCLick="doIt('5');" style="font-size: 30">
-<INPUT TYPE="button" VALUE="  6  " OnClick="doIt('6');" style="font-size: 30">
+<INPUT TYPE="button" VALUE="  4  " OnClick="doIt('4');" style="font-size: 40">
+<INPUT TYPE="button" VALUE="  5  " OnCLick="doIt('5');" style="font-size: 40">
+<INPUT TYPE="button" VALUE="  6  " OnClick="doIt('6');" style="font-size: 40">
 <br>
-<INPUT TYPE="button" VALUE="  1  " OnClick="doIt('1');" style="font-size: 30">
-<INPUT TYPE="button" VALUE="  2  " OnCLick="doIt('2');" style="font-size: 30">
-<INPUT TYPE="button" VALUE="  3  " OnClick="doIt('3');" style="font-size: 30">
+<INPUT TYPE="button" VALUE="  1  " OnClick="doIt('1');" style="font-size: 40">
+<INPUT TYPE="button" VALUE="  2  " OnCLick="doIt('2');" style="font-size: 40">
+<INPUT TYPE="button" VALUE="  3  " OnClick="doIt('3');" style="font-size: 40">
 <br>
 
-<INPUT TYPE="button" VALUE="  0  " OnClick="doIt('0');" style="font-size: 30">
+<INPUT TYPE="button" VALUE="  0  " OnClick="doIt('0');" style="font-size: 40">
 <br>
 </TD>
 </TR>
